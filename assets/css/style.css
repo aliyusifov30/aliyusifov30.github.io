@@ -1,0 +1,341 @@
+.home-section header {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+}
+
+.home-section header .container {
+  background-color: transparent;
+}
+
+.home-section header .container .header-item {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.home-section header .container .li-items {
+  margin: 40px 20px !important;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-section header .container .li-items li {
+  list-style-type: none;
+  z-index: 10;
+  margin: 0px 30px;
+}
+
+.home-section header .container .li-item {
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  z-index: 100;
+}
+
+.home-section header .container .li-item a {
+  cursor: default;
+}
+
+.socialMedias ul {
+  list-style-type: none;
+}
+
+.socialMedias ul li {
+  z-index: 10 !important;
+}
+
+.socialMedias ul a {
+  color: white;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100 !important;
+}
+
+.socialMedias ul a i {
+  cursor: pointer;
+  z-index: 10 !important;
+}
+
+.cursor-item {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid whitesmoke;
+  z-index: 1;
+}
+
+.little-cursor-item {
+  position: absolute;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0.5;
+  background-color: white;
+  z-index: 1;
+}
+
+.rainNumber {
+  -webkit-animation: rainMove 5s infinite;
+          animation: rainMove 5s infinite;
+  color: white;
+  z-index: 5;
+  position: absolute;
+  top: 0%;
+  left: 0px;
+  display: block;
+  height: 1px;
+}
+
+.hello-side {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hello-side .row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+.hello-side .socialMedias ul {
+  z-index: 10 !important;
+}
+
+.hello-side .socialMedias li {
+  z-index: 10 !important;
+  margin: 0px 10px !important;
+}
+
+.hello-side .socialMedias a {
+  z-index: 10 !important;
+}
+
+.hello-side .portfolio-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 93vh;
+}
+
+.hello-side .portfolio-name a {
+  color: #c1c1c1;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+}
+
+header {
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  font-family: 'Poppins', sans-serif;
+}
+
+@-webkit-keyframes rainMove {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  100% {
+    -webkit-transform: translate(0px, calc(100vh));
+            transform: translate(0px, calc(100vh));
+  }
+}
+
+@keyframes rainMove {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  100% {
+    -webkit-transform: translate(0px, calc(100vh));
+            transform: translate(0px, calc(100vh));
+  }
+}
+
+header {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+header .row {
+  margin: 20px 0px !important;
+}
+
+header .logo-name {
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header .navbar-item {
+  text-decoration: none;
+  color: #d1d1d1;
+  margin: 0px 10px;
+  font-size: 13px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: 300;
+}
+
+header .navbar-item:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: white;
+}
+
+header .line {
+  width: 100%;
+  height: 1px;
+  background-color: #aaaaaa;
+}
+
+body {
+  overflow: auto !important;
+}
+
+main {
+  font-family: 'Poppins', sans-serif;
+}
+
+main .about-title-section .image-content {
+  width: 300px;
+  height: 300px;
+  margin-top: 50px;
+}
+
+main .about-title-section .image-content img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+}
+
+main .about-title-section .about-head {
+  margin: 20px 0px;
+  color: white;
+}
+
+main .about-title-section .about-head span {
+  font-weight: 300;
+  font-size: 25px;
+}
+
+main .about-title-section .about-context {
+  margin: 10px 0px;
+  font-size: 13px;
+  color: #dadada;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .about-title-section .about-context p {
+  width: 50%;
+}
+
+main .about-title-section .about-context .myCV {
+  color: #9a9a9a;
+  text-decoration: none;
+}
+
+main .about-roadmap {
+  margin-top: 50px;
+}
+
+main .about-roadmap .container-fuild {
+  height: 100px;
+}
+
+main .about-roadmap .row {
+  height: 100%;
+}
+
+main .about-roadmap .main-line {
+  background-color: white;
+  height: 10px;
+  width: 250px;
+  padding: 0px !important;
+  margin: 0px 10px;
+}
+
+main .about-roadmap .main-circle {
+  background-color: white;
+  height: 25px;
+  width: 25px;
+  padding: 0px !important;
+  border-radius: 50%;
+  margin: 0px 10px;
+}
+
+.about-title {
+  font-size: 50px;
+  color: white;
+  font-weight: 500;
+}
+
+.about-context {
+  text-align: center;
+  color: white;
+}
+
+body {
+  overflow: hidden;
+  z-index: -20;
+  background-color: black !important;
+}
+
+ul {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+/*# sourceMappingURL=style.css.map */
