@@ -1,0 +1,41 @@
+
+
+.contact{
+
+    .container{
+        font-weight: 200 !important;
+        .contact-head{
+            font-size: 25px;
+            color: white;
+            font-weight: 300;
+            padding: 50px 0px;
+        }
+        .form-label{
+            color: white;
+        }
+
+        .form-control{
+            background-color: transparent;
+            border:0px;
+            border-radius: 0px;
+            border:0px !important;
+            box-shadow: none !important;
+            border-bottom: 1px solid white !important;
+            color: white;
+            font-weight: 200 !important;
+            &:focus{
+                
+            }
+        }
+        .btn-sep{
+            background-color: transparent;
+            border: 1px solid white !important;
+            color: rgb(122, 122, 122);
+            transition: 0.5s;
+            &:hover{
+                transition: 0.5s;
+                color: white;
+            }
+        }
+    }
+}

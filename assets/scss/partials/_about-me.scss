@@ -12,6 +12,11 @@ header{
         color: white;
         font-weight: 300;
         letter-spacing: 2px;
+        text-decoration: none;
+
+        &:hover{
+            color: white;
+        }
     }
 
     ul{
@@ -109,12 +114,6 @@ main{
     }
 }
 
-
-// .about-head{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
 .about-title{
     font-size: 50px;
     color: white;
@@ -123,4 +122,13 @@ main{
 .about-context{
     text-align: center;
     color: white;
+}
+
+
+@media (max-width: 446px) {
+    .about-context{
+        p{
+            width: 75% !important;
+        }
+    }
 }

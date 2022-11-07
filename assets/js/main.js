@@ -57,6 +57,7 @@ function DoRainAlgorimt(){
         div.style.opacity = rainMoveProp.opacity;
         div.style.delay = rainMoveProp.delay;
         div.style.left = rainMoveProp.left;
+        div.style.cursor = "default";
 
         document.body.appendChild(div);
 
@@ -68,19 +69,6 @@ function DoRainAlgorimt(){
 }
 
 let navbarItem = document.querySelectorAll(".li-items li a")
-
-// navbarItem.forEach(element => {
-//     element.addEventListener("mouseover",function(){
-//         element.style.color = "rgb(255, 0, 0)"
-//         element.style.transition = "0.5s"
-//     })
-//     element.addEventListener("mouseout",function(){
-//         element.style.color = "white"
-//         element.style.transition = "0.5s"
-//     })
-// });
-
-
 let liItems = document.querySelectorAll(".li-items li");
 
 let cursorItem = document.querySelector(".cursor-item");
@@ -116,9 +104,17 @@ mediaItems.forEach(element=>{
     })
 })
 
-addEventListener('resize', function(){
+window.addEventListener('resize', function(){
 
     let rainNumbers = document.querySelectorAll(".rainNumber");
+
+    if(window.innerWidth <= 1280){
+        cursorItem.style.visibility = "hidden";
+        secondCursorItem.style.visibility = "hidden";
+    }else{
+        cursorItem.style.visibility = "visible";
+        secondCursorItem.style.visibility = "visible";
+    }
 
     rainNumbers.forEach(e=>{
         e.style.left = Math.floor(Math.random() * screen.availWidth * 0.97) + "px"
@@ -127,7 +123,13 @@ addEventListener('resize', function(){
     // this.document.body.style.height = this.screen.availHeight + "px";
 });
 
-
+if(window.innerWidth <= 1280){
+    cursorItem.style.visibility = "hidden";
+    secondCursorItem.style.visibility = "hidden";
+}else{
+    cursorItem.style.visibility = "visible";
+    secondCursorItem.style.visibility = "visible";
+}
 
 // about me 
 

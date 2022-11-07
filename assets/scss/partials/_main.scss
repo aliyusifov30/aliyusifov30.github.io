@@ -1,6 +1,7 @@
 
 
 .home-section{
+    overflow: hidden !important;
     header{
         background-color: transparent;
         position:absolute;
@@ -27,7 +28,7 @@
             .li-item{
                 font-size: 17px;
                 text-decoration: none;
-                color: white;
+                color: rgb(255, 255, 255);
                 font-weight: 300;
                 z-index: 100;
                 // cursor: pointer;
@@ -138,13 +139,25 @@
     }
 }
 
-header{
-   font-family: 'Poppins', sans-serif;
+
+@media (max-width: 446px) {
+    .home-section{
+        header{
+            .container{
+                .li-items{
+                    margin: 40px 0px !important;
+                }
+                li{
+                    margin: 0px 14px !important;
+                }
+                .li-item{
+                    font-size: 15px !important;
+                }
+            }
+        }
+    }
 }
 
-main{
-    font-family: 'Poppins', sans-serif;
-}
 @keyframes rainMove {
     0% {
         transform: translate(0px,0px);
