@@ -108,6 +108,10 @@ window.addEventListener('resize', function(){
 
     let rainNumbers = document.querySelectorAll(".rainNumber");
 
+    console.log("inner " + window.innerWidth)
+    console.log("outer " + window.outerWidth)
+    console.log("screen " + screen.width)
+
     if(window.innerWidth <= 1280){
         cursorItem.style.visibility = "hidden";
         secondCursorItem.style.visibility = "hidden";
@@ -132,4 +136,3 @@ if(window.innerWidth <= 1280){
 }
 
 // about me 
-

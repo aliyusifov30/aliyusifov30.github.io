@@ -198,6 +198,12 @@
   }
 }
 
+.contact .navbar-side {
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: end !important;
+}
+
 .contact .container {
   font-weight: 200 !important;
 }
@@ -239,6 +245,33 @@
   color: white;
 }
 
+@media (max-width: 576px) {
+  .navbar-logo-name {
+    font-size: 12px !important;
+  }
+  .navbar-side {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: end !important;
+  }
+}
+
+@media (max-width: 280px) {
+  .navbar-side {
+    width: 100% !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .logo-side {
+    width: 100% !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    text-align: center;
+  }
+}
+
 header {
   font-family: 'Poppins', sans-serif;
   position: relative;
@@ -248,36 +281,8 @@ header .row {
   margin: 20px 0px !important;
 }
 
-header .logo-name {
-  font-size: 14px;
-  color: white;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-decoration: none;
-}
-
-header .logo-name:hover {
-  color: white;
-}
-
 header ul {
   list-style-type: none;
-}
-
-header .navbar-item {
-  text-decoration: none;
-  color: #d1d1d1;
-  margin: 0px 10px;
-  font-size: 13px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  font-weight: 300;
-}
-
-header .navbar-item:hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  color: white;
 }
 
 header .line {
@@ -292,6 +297,10 @@ body {
 
 main {
   font-family: 'Poppins', sans-serif;
+}
+
+main .about-title-section .container {
+  margin-top: 50px;
 }
 
 main .about-title-section .image-content {
@@ -342,33 +351,87 @@ main .about-title-section .about-context .myCV {
   text-decoration: none;
 }
 
-main .about-roadmap {
-  margin-top: 50px;
-}
-
-main .about-roadmap .container-fuild {
+main #about-roadmap .container-fuild {
   height: 100px;
 }
 
-main .about-roadmap .row {
-  height: 100%;
+main #about-roadmap .map-title {
+  margin-bottom: 70px;
 }
 
-main .about-roadmap .main-line {
-  background-color: white;
-  height: 10px;
-  width: 250px;
+main #about-roadmap .map-title .map-name {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+main #about-roadmap .road-map {
+  position: relative;
+}
+
+main #about-roadmap .road-map .main-line {
+  background-color: #e0e0e0;
+  height: 60px;
+  width: 5px;
   padding: 0px !important;
   margin: 0px 10px;
+  border-radius: 10px;
 }
 
-main .about-roadmap .main-circle {
+main #about-roadmap .road-map .small-line {
+  background-color: #e0e0e0;
+  height: 30px !important;
+}
+
+main #about-roadmap .road-map .long-line {
+  background-color: #e0e0e0;
+  height: 100px !important;
+}
+
+main #about-roadmap .road-map .main-yaer {
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+main #about-roadmap .road-map .little-circle {
+  height: 10px !important;
+  width: 10px !important;
+}
+
+main #about-roadmap .road-map .main-circle {
+  height: 15px;
+  margin: 45px 0px;
+  position: relative;
+  top: 10%;
+  width: 15px;
   background-color: white;
-  height: 25px;
-  width: 25px;
   padding: 0px !important;
   border-radius: 50%;
-  margin: 0px 10px;
+}
+
+main #about-roadmap .road-map .main-circle::after {
+  position: absolute;
+  top: -48px;
+  left: 5px;
+  width: 5px !important;
+  height: 50px !important;
+  background-color: white;
+  padding: 0px !important;
+  border-radius: 10px;
+  content: "";
+}
+
+main #about-roadmap .road-map .main-circle::before {
+  position: absolute;
+  top: 13px;
+  left: 5px;
+  width: 5px !important;
+  height: 50px !important;
+  background-color: white;
+  padding: 0px !important;
+  border-radius: 10px;
+  content: "";
 }
 
 .about-title {
@@ -401,6 +464,34 @@ ul {
 
 header {
   font-family: 'Poppins', sans-serif;
+}
+
+header .navbar-item {
+  text-decoration: none;
+  color: #d1d1d1;
+  margin: 0px 10px;
+  font-size: 13px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: 300;
+}
+
+header .navbar-item:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: white;
+}
+
+header .navbar-logo-name {
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+header .navbar-logo-name:hover {
+  color: white;
 }
 
 main {

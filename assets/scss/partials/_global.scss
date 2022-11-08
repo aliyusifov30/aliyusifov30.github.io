@@ -15,12 +15,36 @@ ul{
 
 header{
     font-family: 'Poppins', sans-serif;
+
+      .navbar-item{
+        text-decoration: none;
+        color: rgb(209, 209, 209);
+        margin:0px 10px;
+        font-size: 13px;
+        transition: 0.5s;
+        font-weight: 300;
+
+        &:hover{
+            transition: 0.5s;
+            color: white;
+        }
+    }
+      .navbar-logo-name{
+        font-size: 14px;
+        color: white;
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-decoration: none;
+
+        &:hover{
+            color: white;
+        }
+      } 
  }
  
  main{
      font-family: 'Poppins', sans-serif;
  }
-
 
  body::-webkit-scrollbar {
     width: 5px;

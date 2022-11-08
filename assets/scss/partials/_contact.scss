@@ -1,7 +1,9 @@
 
 
 .contact{
-
+    .navbar-side{
+        justify-content: end !important;
+    }
     .container{
         font-weight: 200 !important;
         .contact-head{
@@ -23,9 +25,6 @@
             border-bottom: 1px solid white !important;
             color: white;
             font-weight: 200 !important;
-            &:focus{
-                
-            }
         }
         .btn-sep{
             background-color: transparent;
@@ -37,5 +36,27 @@
                 color: white;
             }
         }
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-logo-name{
+        font-size: 12px !important;
+    }
+    .navbar-side{
+        justify-content: end !important;
+    }
+}
+
+
+@media (max-width: 280px) {
+    .navbar-side{
+        width: 100% !important;
+        justify-content: center !important;
+    }
+    .logo-side{
+        width: 100% !important;
+        justify-content: center !important;
+        text-align: center;
     }
 }
