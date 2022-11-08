@@ -1,6 +1,13 @@
 
 
-let video = document.querySelector(".lazy")
+let load = document.querySelector(".load")
+
+
+window.addEventListener("load",function(){
+    load.style.zIndex = "1";
+    load.style.background = "black";
+
+})
 
 // var response = video.addEventListener("canplaythrough", function() {
 //   // Ready to play whole video?
