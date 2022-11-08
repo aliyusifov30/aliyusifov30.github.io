@@ -157,6 +157,17 @@
         }
     }
 }
+@media (max-width: 280px) {
+    .home-section{
+        header{
+            .container{
+                .li-item{
+                    font-size: 13px !important;
+                }
+            }
+        }
+    }
+}
 
 @keyframes rainMove {
     0% {

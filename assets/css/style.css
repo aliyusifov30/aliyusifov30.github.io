@@ -176,6 +176,12 @@
   }
 }
 
+@media (max-width: 280px) {
+  .home-section header .container .li-item {
+    font-size: 13px !important;
+  }
+}
+
 @-webkit-keyframes rainMove {
   0% {
     -webkit-transform: translate(0px, 0px);
@@ -195,80 +201,6 @@
   100% {
     -webkit-transform: translate(0px, calc(100vh));
             transform: translate(0px, calc(100vh));
-  }
-}
-
-.contact .navbar-side {
-  -webkit-box-pack: end !important;
-      -ms-flex-pack: end !important;
-          justify-content: end !important;
-}
-
-.contact .container {
-  font-weight: 200 !important;
-}
-
-.contact .container .contact-head {
-  font-size: 25px;
-  color: white;
-  font-weight: 300;
-  padding: 50px 0px;
-}
-
-.contact .container .form-label {
-  color: white;
-}
-
-.contact .container .form-control {
-  background-color: transparent;
-  border: 0px;
-  border-radius: 0px;
-  border: 0px !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-  border-bottom: 1px solid white !important;
-  color: white;
-  font-weight: 200 !important;
-}
-
-.contact .container .btn-sep {
-  background-color: transparent;
-  border: 1px solid white !important;
-  color: #7a7a7a;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.contact .container .btn-sep:hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  color: white;
-}
-
-@media (max-width: 576px) {
-  .navbar-logo-name {
-    font-size: 12px !important;
-  }
-  .navbar-side {
-    -webkit-box-pack: end !important;
-        -ms-flex-pack: end !important;
-            justify-content: end !important;
-  }
-}
-
-@media (max-width: 280px) {
-  .navbar-side {
-    width: 100% !important;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
-  }
-  .logo-side {
-    width: 100% !important;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
-    text-align: center;
   }
 }
 
