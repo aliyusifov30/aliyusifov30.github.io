@@ -1,0 +1,8 @@
+
+
+let load = document.querySelector(".load")
+
+window.addEventListener("load",function(){
+    load.style.display = "none";
+})
+

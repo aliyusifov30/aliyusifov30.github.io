@@ -15,7 +15,6 @@ ul{
 
 header{
     font-family: 'Poppins', sans-serif;
-
       .navbar-item{
         text-decoration: none;
         color: rgb(209, 209, 209);
@@ -58,4 +57,11 @@ header{
     background-color: white;
     // outline: 1px solid slategrey;
     border-radius: 10px;
+}
+
+
+@media (max-width: 380px) {
+  .navbar-logo-name{
+    font-size: 13px !important;
+  }
 }

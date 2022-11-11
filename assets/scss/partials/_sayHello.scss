@@ -1,7 +1,144 @@
 
 
 .load{
-    background: red;
+    // background: black;
     z-index: 100;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 8%;
+    }
+}
+.sayHelloHead{
+    z-index: 10;
+}
+
+
+
+.content-s{
+    margin-top: 100px;
+    z-index: 1000 !important;
+    position: relative;
+    .content-first-part{
+        color: rgb(180, 180, 180) !important;
+        font-size: 50px !important;
+        z-index: 1009 !important;
+        margin-left: 200px;
+    }
+    .content-sec-part{
+        color: rgb(255, 255, 255) !important;
+        font-size: 60px !important;
+        z-index: 1009 !important;
+        margin-left: 200px;
+    }
+}
+
+form{
+    margin-top: 100px;
+    position: relative;
+    z-index: 100;
+    margin-left: 200px;
+    textarea,input{
+        background-color: transparent !important;
+        outline: none;
+        border: 0px;
+        color: white;
+        font-size: 40px;
+        width: 100%;
+    }
+    .sendBtn{
+        margin-top: 100px;
+        position: relative;
+        border: 0px;
+        background-color: transparent;
+        border-radius: 20px;
+        padding: 8px 14px;
+        background-color: white;
+        font-size: 15px;
+        transition: 0.5s;
+        color: black;  
+
+        &:hover{
+            color: white;  
+            transition: 0.5s;
+        }
+    }
+}
+
+.lazy-video{
+
+    height: 100%;
+    width: 100%;
+
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    vertical-align: middle;
+    object-fit: cover;
+
+}
+
+.lazy-video-mobile{
+    display: none;
+}
+
+@media (max-width: 1075px) {
+    .load{
+        img{
+            width: 20% !important;
+        }
+    }
+}
+
+@media (max-width: 616px) {
+    .load{
+        img{
+            width: 34% !important;
+        }
+    }
+}
+
+
+
+
+@media (max-width: 996px) {
+    
+}
+
+@media (max-width: 450px) {
+    .lazy-video-mobile{
+        display: block;
+    }
+    .lazy-video-desktop{
+        display: none;
+    }
+    .content-s{
+        .content-first-part{
+            font-size: 25px !important;
+        }
+        .content-sec-part{
+            font-size: 35px !important;
+        }
+    }
+    form{
+        input{
+            font-size: 25px !important;
+        }
+    }
+    .content-first-part,.content-sec-part,form{
+        margin-left: 20px !important;
+    }
+    .load{
+        img{
+            width: 24% !important;
+        }
+    }
 }
