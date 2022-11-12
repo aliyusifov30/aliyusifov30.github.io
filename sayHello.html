@@ -22,21 +22,21 @@
     <header class="sayHelloHead">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-4">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-5">
                     <a href="./index.html" class="navbar-logo-name">
                         ALI YUSIFOV
                     </a>
                  </div>
-                 <div class="col-lg-6 col-md-6 col-sm-6 col-8 d-flex justify-content-end">
+                 <div class="col-lg-6 col-md-6 col-sm-6 col-7 d-flex justify-content-end">
                     <ul class="d-flex">
-                        <li>
+                        <!-- <li>
                             <a href="./index.html" class="navbar-item">Home</a>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="./contact.html" class="navbar-item">Blog</a>
                         </li>
                         <li>
-                            <a href="./contact.html" class="navbar-item">About Me</a>
+                            <a href="./about-me.html" class="navbar-item">About Me</a>
                         </li>
                     </ul>
                  </div>
@@ -51,29 +51,37 @@
     </div>
     
     <main>
-        <div class="content-s">
-            <div class="content-first-part">
-                I am 
+        <section id="sayHellohero">
+            <div class="contanier">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="content-s">
+                            <div class="content-first-part">
+                                I am 
+                            </div>
+                            <div class="content-sec-part">
+                                always here
+                            </div>
+                        </div>
+                        <form action="" id="sep-form">
+                            <input type="text" autofocus value="Hi, say Hello">
+                            <!-- <textarea rows="2">Hi, say Hello</textarea> -->
+                            <!-- <div class="button-side"> -->
+                            <!-- </div> -->
+                        </form>
+                        <button type="submit" class="sendBtn" form="sep-form">Send Message</button>
+                    </div>
+                </div>
             </div>
-            <div class="content-sec-part">
-                always here
-            </div>
-        </div>
-        <form action="">
-            <input type="text" autofocus value="Hi, say Hello">
-
-            <!-- <textarea rows="2">Hi, write something</textarea> -->
-            <div class="button-side">
-                <button type="submit" class="sendBtn btn btn-outline-dark">Send Message</button>
-            </div>
-        </form>
-
+        </section>
         <video class="lazy-video lazy-video-desktop" preload="auto" autoplay muted loop playsinline>
             <source src="./assets/videos/as.mp4" type="video/mp4" >
         </video>
-
         <video class="lazy-video-mobile lazy-video" preload="auto" autoplay muted loop playsinline>
             <source src="./assets/videos/375px.mp4" type="video/mp4">
+        </video>
+        <video class="lazy-video-tablet lazy-video" preload="auto" autoplay muted loop playsinline>
+            <source src="./assets/videos/762.mp4" type="video/mp4">
         </video>
 
     </main>
