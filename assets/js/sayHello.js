@@ -9,6 +9,7 @@ load.style.transition = "100";
 window.addEventListener("load",function(){
     load.style.opacity = "0";
     load.style.transition = "2s";
+    load.style.zIndex = "0";
     console.log(body)
     body.style.overflow = "auto !important";
 })
