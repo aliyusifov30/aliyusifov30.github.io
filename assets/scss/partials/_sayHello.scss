@@ -1,8 +1,8 @@
 
 
 .load{
-    // background: black;
-    z-index: 100;
+    background: black;
+    z-index: 1000;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -10,7 +10,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     img{
         width: 8%;
     }
