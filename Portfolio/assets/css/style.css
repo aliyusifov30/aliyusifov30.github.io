@@ -1,0 +1,124 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+main, header {
+  font-family: 'Mulish', sans-serif;
+  z-index: 2 !important;
+}
+
+.cursor-item {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #d4c8c8;
+}
+
+.cursor-item-little {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #afa3a3;
+}
+
+#home {
+  width: 40%;
+  padding: 150px 0px;
+  padding-left: 70px;
+  background-color: #F8F8F8;
+}
+
+#home .main-side .main-side-title a {
+  color: black;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+#home .main-side .main-side-navbar {
+  padding: 50px 0px;
+}
+
+#home .main-side .main-side-navbar li {
+  padding: 5px 0px;
+}
+
+#home .main-side .main-side-navbar li a {
+  color: #767676;
+  z-index: 10 !important;
+}
+
+#home .main-side .main-side-cover {
+  color: #999;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+#home .main-side .main-side-cover a {
+  color: black;
+}
+
+#home .main-side .main-side-search form {
+  width: 53%;
+}
+
+#home .main-side .main-side-search .input-box {
+  position: relative;
+}
+
+#home .main-side .main-side-search button {
+  border: 0px;
+  background-color: transparent;
+  position: absolute;
+  right: 0px;
+}
+
+#home .main-side .main-side-search input {
+  width: 100%;
+  border: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 7px;
+  font-size: 15px;
+}
+
+#home .main-side .main-side-search input:focus {
+  outline: none;
+}
+
+#home .main-side .main-side-cover {
+  margin: 60px 0px;
+}
+/*# sourceMappingURL=style.css.map */
